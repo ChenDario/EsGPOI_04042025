@@ -1,7 +1,5 @@
 package com.example;
 
-import java.util.Set;
-
 /*
  * Rappresenta una temperatura espressa in gradi Celsius. Permette conversioni in Fahrenheit e Kelvin, e modifiche del valore attraverso incrementi o decrementi.
 */
@@ -58,5 +56,15 @@ public class Temperatura {
     public double inKelvin(){
         return this.valoreCelsius + 273.15;
     }
+
+    /*
+     * Restituisce una rappresentazione testuale della temperatura. Esempio: Temperatura: 25.00 °C - 77.00 °F - 298.15 K
+    */
+    @Override
+    public String toString() {
+        return "Temperatura [valoreCelsius=" + valoreCelsius + "]";
+    }
+
+    
 
 }
